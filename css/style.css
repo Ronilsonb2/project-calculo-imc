@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-area-cards{
+    display: grid;
+    grid-gap: 64px;
+    grid-template-columns: 46% 46%;
+    padding: 30px 0;
+}
+
+.box-principal .card1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.box-principal h1{
+    padding: 20px 0;
+    font-weight: 600;
+    color: #65737a;
+}
+.card1 p{
+    font-size: 16px;
+    padding-bottom: 40px;
+    color: #bcbec1;
+}
+
+.box-resultado p{
+    font-size: 12px;
+    color: #fff;
+}
+
+.card1 input{
+    width: 100%;
+    height: 40px;
+    border: 0 0 1px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: none;
+    color: #bcbec1;
+    border-bottom: 2px solid #628d96;
+} 
+
+.card1 input:focus{
+    outline: 0;
+}
+
+.btn{
+    width: 49%;
+    border-radius: 10px;
+    height: 40px;
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#btn-calc{
+    background-color: rgb(98 141 150);
+}
+
+#btn-ref{
+    background-color: rgb(74, 91, 94);
+}
+
+#btn-calc:hover{
+    background-color: #9ca5a7;
+    border: 1px solid rgb(98 141 150);
+    color: #000;
+}
+
+#btn-ref:hover{
+    background-color: rgb(99 108 109);
+    border: 1px solid rgb(98 141 150);
+    
+}
+
+.grid-area-cards .card2{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 15px;
+    
+}
+
+.resultado-open{
+    grid-template-columns: 1fr !important;
+}
+
+.box-resultado{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 14%;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.box-card-1{
+    background-color: rgb(177 144 146);
+}
+
+.box-card-2{
+    background-color: rgb(134 175 124);
+}
+
+.box-card-3{
+    background-color: rgb(111 198 94);
+}
+
+.box-card-4{
+    background-color: rgb(84 95 83);
+}
+
+.circle{
+    background-color: #b28383;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.circle img{
+    width: 100%;
+    max-width: 50px;
+}
+
+
+@media (max-width: 800px){
+    .grid-area-cards {
+        display: block;
+        padding: 20px;
+    }
+
+    .grid-area-cards .card2 {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-resultado{
+        margin: 10px;
+    }
+
+    .card1{
+        padding-bottom: 40px;
+    }
+
+    .box-resultado p{
+        padding: 5px 0;
+    }
+
+    strong{
+        padding-top: 10px;
+    }
+}

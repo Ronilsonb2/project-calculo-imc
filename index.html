@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-area-cards">
+            <div class="box-principal card1">
+                <img src="assets/powered.png" alt="icons" width="144" height="auto">
+                <h1>Calcule o seu IMC.</h1>
+                <p>IMC é a sigla para índice de Massa Corpórea, parâmetro adotado para calcular o peso ideal de cada pessoa</p>
+
+                <input type="number" id="altura" placeholder="Digite a sua altura Ex: 1.75(em metros)">
+
+                <input type="number" id="peso" placeholder="Digite o seu peso">
+
+                <button class="btn" id="btn-calc" onclick="enviaDados()" >calcular</button>
+                <button class="btn" id="btn-ref" onClick="window.location.reload()">Refazer cálculo</button>
+            </div>
+            <div class="box-principal card2">
+                <div class="box-resultado box-card-1">
+                    <div class="circle">
+                        <img src="assets/down.png" alt="icons">
+                    </div>
+                    
+                    <strong>Magreza</strong>
+                    <p class="res-calc""></p>
+                    <p>IMC está entre 0 e 18.5</p>
+                </div>
+                <div class="box-resultado box-card-2">
+                    <div class="circle">
+                        <img src="assets/up.png" alt="icons">
+                    </div>
+                    
+                    <strong>Normal</strong>
+                    <p class="res-calc""></p>
+                    <p>IMC está entre 18.5 e 24.9</p>
+                </div>
+                <div class="box-resultado box-card-3">
+                   <div class="circle">
+                       <img src="assets/down.png" alt="icons">
+                   </div> 
+                    <strong>Sobrepeso</strong>
+                    <p class="c""></p>
+                    <p>IMC está entre 25 e 30</p>
+                </div>
+                <div class="box-resultado box-card-4">
+                   <div class="circle">
+                       <img src="assets/down.png" alt="icons">
+                   </div> 
+                    <strong>Obesidade</strong>
+                    <p class="res-calc""></p>
+                    <p>IMC está entre 30.1 e 99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
