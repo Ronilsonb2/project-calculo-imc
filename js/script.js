@@ -6,7 +6,16 @@ function enviaDados(){
 
     let res = (peso/(altura*altura)).toFixed(2);
 
+    let msg = document.querySelector(".msg");
+
     console.log(res);
+
+    if (peso && altura) {
+        if (!altura.includes('.')) {
+            msg.innerHTML = 'Digite a altura no formato correto (exemplo: 1.75)';
+            return;
+        }
+    }
 
     if( peso && altura != '') {
         if(res <= 18.5){
@@ -46,9 +55,4 @@ function enviaDados(){
         alert("Favor preencher os campos corretamente")
     }
 }
-
-// function recalcular(){
-//     window.
-// }
-
 
